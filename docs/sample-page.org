@@ -230,6 +230,5 @@ Tags are not yet supported, but will be developed soon.
 
 Org dates are rendered as plain text, but are provided with a css class ( =.firn-timestamp=  ) for optional styling: [2020-06-25 Thu] .
 
-* The render function
 * Find and render me!
 If you can see this, then the render function found this heading and rendered it and it's content.

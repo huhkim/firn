@@ -1,8 +1,9 @@
 (defn default
-  [{:keys [site-map title render partials]}]
-  (let [{:keys [head]} partials]
+  [{:keys [title render partials]}]
+  (let [{:keys [head nav footer]} partials]
     (head
      [:body
+      (nav)
       [:main
        [:article.def-wrapper
         [:div.def-content
@@ -41,4 +42,5 @@
           [:h3 "Rendering the sum Logbook of this file, as a polyline svg. This is a rather opinionated 'render'; it sorts your logbooks into years and the renders a graph for each year. "]
           [:pre [:code "(render :logbook-polyline {:height 70 :stroke \"salmon\"})"]]
           (render :logbook-polyline {:height 70 :stroke "salmon"})
-          [:hr]]]]]])))
+          [:hr]]]]]
+      (footer)])))
